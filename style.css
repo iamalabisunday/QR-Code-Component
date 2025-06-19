@@ -1,0 +1,122 @@
+:root {
+  /* Color  */
+  --Slate-900: #1f314f;
+  --Slate-500: #68778d;
+  --Slate-300: #d5e1ef;
+  --White: #ffffff;
+  --blue-600: #2c7dfa;
+  --blue-500: #3685ff;
+
+  /* Typography */
+  --OutfitBold: 22px;
+  --OutfitRegular: 15px;
+
+  /* Line Height */
+  --BoldLineHeight: 120%;
+  --RegularLineHeight: 140%;
+
+  /* Letter Spacing */
+  --BoldLetterSpacing: 0px;
+  --RegularLetterSpacing: 0.2px;
+
+  /* Spacing */
+  --Spacing-500: 40px;
+  --Spacing-300: 24px;
+  --Spacing-200: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  display: grid;
+  place-content: center;
+  background-color: var(--Slate-300);
+}
+
+/* Main Content Section */
+.main-content {
+  max-width: 320px;
+  min-height: 499px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  border-radius: 1.25rem;
+  padding: 1rem 1rem 2.5rem 1rem;
+  background-color: var(--White);
+}
+
+/* QR Section */
+.QR-section {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  border-radius: 0.625rem;
+  background-color: var(--blue-600);
+  position: relative;
+  overflow: hidden;
+}
+
+/* QR-Scan Image Style */
+.QR-Scan {
+  display: grid;
+  place-content: center;
+  z-index: 2;
+}
+
+/* ornaments Section */
+
+.oval {
+  width: 20.5rem;
+  height: 20.5rem;
+  border-radius: 20.5rem;
+  background-color: var(--blue-500);
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 9rem;
+  right: 5rem;
+}
+
+.oval-copy {
+  width: 20.5rem;
+  height: 20.5rem;
+  border-radius: 20.5rem;
+  background-color: var(--blue-500);
+  flex-shrink: 0;
+  position: absolute;
+  top: 10rem;
+  left: 11rem;
+}
+
+/* /////////// Text Section ////////// */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.text-section h2 {
+  color: var(--Slate-900);
+  text-align: center;
+  font-size: var(--OutfitBold);
+  line-height: var(--BoldLineHeight);
+  letter-spacing: var(--BoldLetterSpacing);
+}
+
+.text-section p {
+  width: 95%;
+  color: var(--Slate-500);
+  text-align: center;
+  font-size: var(--OutfitRegular);
+  line-height: var(--RegularLineHeight);
+  letter-spacing: var(--RegularLetterSpacing);
+}
