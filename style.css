@@ -51,6 +51,7 @@ body {
   border-radius: 1.25rem;
   padding: 1rem 1rem 2.5rem 1rem;
   background-color: var(--White);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 /* QR Section */
@@ -67,6 +68,9 @@ body {
 
 /* QR-Scan Image Style */
 .QR-Scan {
+  width: 100%;
+  max-width: 288px;
+  border-radius: 0.625rem;
   display: grid;
   place-content: center;
   z-index: 2;
@@ -119,4 +123,23 @@ body {
   font-size: var(--OutfitRegular);
   line-height: var(--RegularLineHeight);
   letter-spacing: var(--RegularLetterSpacing);
+}
+
+/* ********** Mobile view *********** */
+@media (max-width: 23.4375rem) {
+  .oval,
+  .oval-copy {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .oval {
+    bottom: 7rem;
+    right: 3rem;
+  }
+
+  .oval-copy {
+    top: 8rem;
+    left: 6rem;
+  }
 }
