@@ -42,8 +42,8 @@ body {
 
 /* Main Content Section */
 .main-content {
-  max-width: 320px;
-  min-height: 499px;
+  max-width: 20rem;
+  min-height: 31.1875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
